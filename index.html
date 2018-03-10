@@ -3,9 +3,11 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/animate.css" rel="stylesheet" type="text/css" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<script type="text/javascript" src="js/bootstrap.js"> </script>
 	<script type="text/javascript" src="js/vue.js"> </script>
 </head>
@@ -15,19 +17,7 @@
 		<div class="brand-name">
 				<h2 class="brand-text" >{{ brandname }}</h2>
 		</div>
-		<div class="menu-icon"> 
-			<img src="img/menu.png"  class="img-fluid" v-on:click="togglenav" alt="Responsive image" width="35" height="30">
-		</div>
-		<transition name="custom-transition"  enter-active-class="animated slideInRight"  leave-active-class="animated slideOutRight">
-			<div v-show="toggleon" class="nav-mobile">
-				<a v-bind:class="linkproject" v-on:click="project" target="_blank" href="https://github.com/kitchanismo">GitHub</a><br/>
-			</div>
-		</transition>
-		<div class = "menu-nav">
-			<a  v-bind:class="linkproject" v-on:click="project" target="_blank" href="https://github.com/kitchanismo">GitHub</a><span class="separator">
-		
-		</div>
-</div>
+	</div><br>
 	<transition name="fade">
 	<div id =  "container" v-show="!toggleon">
 		<div class = "header">
@@ -63,6 +53,12 @@
 				I also enjoy making apps in .net and tweaking with web apps in my spare time. I like .net, sql, html, css, js and php. I enjoy building stuff, investigating new technologies and learning new things. I tend to follow start-ups scene and game server developers. If there's a livestream in my facebook page you may see me there.
 			</p>
 		</div>
+		<div class="footer">
+			<a  v-bind:class="linkproject"  target="_blank" href="https://facebook.com/kitchanismo"><i class="devicon-facebook-plain"></i></a><span class="separator">
+			<a  v-bind:class="linkproject"  target="_blank" href="https://github.com/kitchanismo"><i class="devicon-github-plain-wordmark"></i></a><span class="separator">
+			<a  v-bind:class="linkproject"  target="_blank" href="https://bitbucket.org/kitchanismo"><i class="devicon-bitbucket-plain"></i></a><span class="separator">
+		
+		</div>
 	</div>
 	</transition> 
 	<transition name="fade">
@@ -71,7 +67,8 @@
 		</div>
 	</transition>
 	</section>	
-	<script type="text/javascript" src="js/function.js"> </script>
 
+	<script type="text/javascript" src="js/function.js"> </script>
+	
 </body>
 </html>
