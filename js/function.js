@@ -5,7 +5,7 @@ new Vue({
               fullname: 'Cristian Dela Vega Betsayda' , 
               dname: '',
               toggleon: false,
-              brandname: 'KITCHAN/SMO',
+              brandname: 'K/TCHAN/SMO',
               brandnameclose: 'footer link',
               nav: 'nav-mobile',
               linkhome: 'link-focus',

@@ -20,15 +20,12 @@
 		</div>
 		<transition name="custom-transition"  enter-active-class="animated slideInRight"  leave-active-class="animated slideOutRight">
 			<div v-show="toggleon" class="nav-mobile">
-				<a v-bind:class="linkhome" v-on:click="home" href="#">Home</a><br/>
-				<a v-bind:class="linkproject" v-on:click="project" href="#">Projects</a><br/>
-				<a v-bind:class="linkcontact" v-on:click="contact" href="#">Contact</a><br/>
+				<a v-bind:class="linkproject" v-on:click="project" target="_blank" href="https://github.com/kitchanismo">GitHub</a><br/>
 			</div>
 		</transition>
 		<div class = "menu-nav">
-			<a  v-bind:class="linkhome" v-on:click="home" href="#">Home</a><span class="separator">|</span>
-			<a  v-bind:class="linkproject" v-on:click="project" href="#">Projects</a><span class="separator">|</span>
-			<a  v-bind:class="linkcontact" v-on:click="contact" href="#">Contact</a>
+			<a  v-bind:class="linkproject" v-on:click="project" target="_blank" href="https://github.com/kitchanismo">GitHub</a><span class="separator">
+		
 		</div>
 </div>
 	<transition name="fade">
@@ -42,7 +39,7 @@
 				</div>
 				<br/>
 				<p class="card-text">
-					<span style="color: white; font-size: 20px;">Software Developer | Web Developer | Graphic Artist</span>
+					<span style="color: white; font-size: 20px;">Desktop App Developer | Full Stack Web Developer</span>
 				</p>
 				<div class="logo">
 				<table>
@@ -61,6 +58,9 @@
 			<h2 class="info-title">Hello World!</h2>
 			<p class="info-text">
 				I'm a freelance developer based in Batangas, Philippines, specialising in building .Net ( Visual Basic and C# ) apps, Web Developer( HTML, CSS, JS, PHP ) , consider myself Mid Level Full-stack developer but I tend to work more on the front-end. I also enjoy making apps in .net and tweaking with web apps in my spare time. I like .net, sql, html, css, js and php. I enjoy building stuff, investigating new technologies and learning new things. I tend to follow start-ups scene and game server developers. If there's a livestream in my facebook page you may see me there.
+			</p>
+			<p class="info-text">
+				I also enjoy making apps in .net and tweaking with web apps in my spare time. I like .net, sql, html, css, js and php. I enjoy building stuff, investigating new technologies and learning new things. I tend to follow start-ups scene and game server developers. If there's a livestream in my facebook page you may see me there.
 			</p>
 		</div>
 		<div class="footer">
